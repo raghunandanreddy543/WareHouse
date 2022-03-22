@@ -31,7 +31,7 @@ func GetConnection() *sql.DB {
 		Quantity float32
 		Unit     string
 	)
-	rows, err := db.Query("select * from warehouse;")
+	rows, err := db.Query("select * from warehouses;")
 	if err != nil {
 		log.Fatal(err)
 	}
